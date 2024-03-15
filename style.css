@@ -1,0 +1,435 @@
+.navbar {
+    padding: 2rem;
+    background-color: aliceblue;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Gerneral styles */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(125, 123, 123);
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgb(36, 36, 36);
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+}
+
+h1 span {
+    color: #ffbf00;
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+}
+
+.otro-color {
+    color: #ffbf00;
+}
+
+.seccion-obscura {
+    color: aliceblue;
+    background-color: #1b1b32;
+    padding: 2rem;
+    text-align: justify
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: "Lato", sans-serif;
+}
+
+.seccion-descripcion {
+    font-size: 1.2rem;
+    color: rgb(125, 123, 123);
+}
+
+.seccion-texto {
+    font-size: 1.2rem;
+    font-family: "Lato", sans-serif;
+}
+
+.btn {
+    font-size: 1rem;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    padding: 8px 0;
+    border-radius: 5px;
+    color: black;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+}
+
+.texto-negro {
+    color: black;
+}
+
+.texto-blanco {
+    color: white;
+}
+
+/* Seccion Hero */
+.hero {
+    background-color: aliceblue;
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-imagen-perfil {
+    padding: 3rem;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+/* Seccion About me */
+.sobre-mi {
+    height: 500px;
+    padding: 10px;
+}
+
+.sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Seccion Expirience */
+
+.expirience {
+    padding: 40px 40px 60px 40px;
+}
+
+.expirience .columna {
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.expirience .columna:hover {
+    color: rgb(255, 255, 255);
+    background-color: #1b1b32;
+}
+
+.expirience i {
+    font-size: 2.5rem;
+    color: rgb(18, 245, 101);
+    padding: 8px 19px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.expirience-titulo {
+    margin: 10px 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.badges-contenedor {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badges {
+    margin: 5px;
+}
+
+/* Seccion Projects */
+.proyectos-recientes {
+    padding: 40px;
+}
+
+.proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+
+}
+
+.projectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyecto-imagen {
+    position: relative;
+}
+
+.proyecto-imagen .img-normalizada {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.proyecto-imagen:hover img {
+    opacity: 0.3;
+}
+
+.proyecto-imagen:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+    display: flex;
+}
+
+.overlay i {
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    margin: 10px;
+}
+
+/* Seccion Pappers */
+.pappers {
+    height: 500px;
+    padding: 30px;
+}
+
+.pappers .card {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px;
+    border-radius: 10px;
+    font-family: lato, sans-serif;
+}
+
+.pappers .card-header {
+    font-weight: bold;
+}
+
+/* Seccion Testimonials */
+.testimonios {
+    padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel {
+    max-width: 800px;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonio-imagen {
+    height: 100px;
+    width: 90px;
+    margin: 10px 20px 20px 10px;
+}
+
+.testimonio-texto {
+    max-width: 70%;
+    font-size: 15px;
+    text-align: center;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tesmonio-info {
+    font-weight: bold;
+    text-align: center;
+}
+
+.testimonio-info p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.testimonio-footer .client {
+    font-size: 1.2rem;
+}
+
+.testimonio-info .cargo {
+    font-size: 0.9rem;
+    color: #656060;
+}
+
+/* Seccion Contacto */
+.contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo {
+    margin-top: -5rem;
+    background-color: rgb(13, 110, 253);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion {
+    color: white;
+    font-size: 1rem;
+}
+
+.contacto button {
+    color: black;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 1.25rem 2rem;
+    margin: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+    background-color: black;
+    color: white;
+}
+
+.contacto button i {
+    color: black;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+    color: white;
+}
+
+/* --Add footer --*/
+
+.footer {
+    min-height: 500px;  
+}
+
+.footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i {
+    color: black;
+}
+
+.derechos-de-autor {
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+
+/* Media queries  Responsive Design */
+@media screen and (max-width: 400px) {
+    .overlay p {
+        font-size: 18px;
+    }
+
+    .overlay i {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .testimonio-imagen {
+        width: 120px;
+        height: 120px;
+    }
+
+    .testimonio-texto {
+        font-size: 16px;
+    }
+}
